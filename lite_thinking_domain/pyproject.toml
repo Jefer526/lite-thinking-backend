@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "lite-thinking-domain"
+version = "1.0.1"
+description = "Core de Dominio para Lite Thinking - Modelos Django reutilizables"
+authors = ["Jeffer <jeffer@litethinking.com>"]
+readme = "README.md"
+packages = [{include = "lite_thinking_domain", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.0"
+psycopg2-binary = "^2.9.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-django = "^4.5.0"
+black = "^23.7.0"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+python_files = ["test_*.py", "*_test.py"]
+addopts = "-v --tb=short"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'

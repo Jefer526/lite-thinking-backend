@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "lite-thinking-backend"
+version = "1.0.0"
+description = "Backend Django para Lite Thinking - Instala el Core de Dominio"
+authors = ["Jeffer <jeffer@litethinking.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Django = "^5.0.0"
+djangorestframework = "^3.14.0"
+djangorestframework-simplejwt = "^5.3.0"
+django-cors-headers = "^4.3.0"
+django-filter = "^23.5"
+psycopg2-binary = "^2.9.9"
+python-decouple = "^3.8"
+reportlab = "^4.0.7"
+google-genai = "^0.2.0"
+
+# ✅ CORE DE DOMINIO - Instalar desde directorio local
+lite-thinking-domain = {path = "../lite_thinking_domain/dist/lite_thinking_domain-1.0.1-py3-none-any.whl"}
+gunicorn = "^23.0.0"
+whitenoise = "^6.11.0"
+dj-database-url = "^3.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-django = "^4.5.0"
+black = "^23.7.0"
+flake8 = "^6.1.0"
+ipython = "^8.18.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 100
+target-version = ['py311']
+include = '\.pyi?$'
