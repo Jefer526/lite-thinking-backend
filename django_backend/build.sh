@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
-# exit on error
 set -o errexit
 
-# Instalar dependencias
+# Instalar lite_thinking_domain desde el directorio padre
+pip install -e ../lite_thinking_domain
+
+# Instalar dependencias del backend
 pip install -r requirements.txt
 
 # Recolectar archivos estáticos
