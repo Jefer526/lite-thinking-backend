@@ -18,7 +18,6 @@ reportlab = "^4.0.7"
 google-genai = "^0.2.0"
 
 # ✅ CORE DE DOMINIO - Instalar desde directorio local
-lite-thinking-domain = {path = "../lite_thinking_domain/dist/lite_thinking_domain-1.0.1-py3-none-any.whl"}
 gunicorn = "^23.0.0"
 whitenoise = "^6.11.0"
 dj-database-url = "^3.0.1"

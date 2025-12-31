@@ -569,25 +569,6 @@ qa = ["flake8 (==5.0.4)", "mypy (==0.971)", "types-setuptools (==67.2.0.1)"]
 testing = ["Django", "attrs", "colorama", "docopt", "pytest (<9.0.0)"]
 
 [[package]]
-name = "lite-thinking-domain"
-version = "1.0.1"
-description = "Core de Dominio para Lite Thinking - Modelos Django reutilizables"
-optional = false
-python-versions = ">=3.11,<4.0"
-groups = ["main"]
-files = [
-    {file = "lite_thinking_domain-1.0.1-py3-none-any.whl", hash = "sha256:ee56e3a02e9c1f9115b87fa0eef4e80e8010815df9c8749c8aceadf1c9a9c12c"},
-]
-
-[package.dependencies]
-Django = ">=5.0.0,<6.0.0"
-psycopg2-binary = ">=2.9.9,<3.0.0"
-
-[package.source]
-type = "file"
-url = "../lite_thinking_domain/dist/lite_thinking_domain-1.0.1-py3-none-any.whl"
-
-[[package]]
 name = "matplotlib-inline"
 version = "0.2.1"
 description = "Inline Matplotlib backend for Jupyter"
@@ -1535,4 +1516,4 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.11"
-content-hash = "6408989891c7a637d958e42ea051f31389d01ace3f4443ba26f4fd032065e3e1"
+content-hash = "8619e5578a4f832929834a4819667bbb0a3bf32d9cdb6b8e22159bf3f649374f"
