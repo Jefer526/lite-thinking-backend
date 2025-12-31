@@ -35,3 +35,6 @@ if not User.objects.filter(is_superuser=True).exists():
 else:
     print('⚠️ Ya existe un superusuario')
 END
+
+
+python manage.py activar_usuarios nombre_usuario_externo
